@@ -1,6 +1,6 @@
 # Northstar OS · 行政運營平台
 
-Northstar OS 是一個獨立於 D0133 原平台的新行政運營入口。本階段完成核心資訊架構與可部署的靜態前端基礎頁面，沿用 D0133 的柔和紙張、苔綠與卡片式視覺語言，但不共用原平台程式碼或資料。
+Northstar OS 是一個獨立於 D0133 原平台的新行政運營入口。本階段先完成總平台核心架構，D0133 僅作為未來可接入的分區模組；兩者不共用程式碼、資料或操作。
 
 ## 第一階段範圍
 
@@ -24,7 +24,7 @@ python3 -m http.server 4173 --directory dist
 
 `dist/` 是可直接部署至 GitHub Pages、Cloudflare Pages、Netlify 或任何靜態託管服務的目錄。此版本零依賴、無建置步驟。
 
-## 建議 GitHub 倉庫名稱
+## 平台倉庫
 
 `northstar-admin-os`（推薦）或 `northstar-operations-platform`。
 
@@ -34,3 +34,7 @@ python3 -m http.server 4173 --directory dist
 2. 加入正式身份驗證與審計記錄。
 3. 完成資料分級與權限映射後，再評估 IMA 知識庫連接器。
 4. 以人工確認閘門包裝低風險 AI 助手能力。
+
+## Summit 總平台邊界
+
+Summit 是總部級行政運營平台，負責全局總覽、分區註冊、角色權限、工作台與 Agent 協作。D0133 只會在後續階段以分區模組形式接入，現有 D0133 平台維持獨立運作，不修改其網址、程式碼、資料或帳號。
